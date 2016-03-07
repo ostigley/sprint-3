@@ -5,14 +5,17 @@ The most noticeable effects are:
 
 #How do you think that works? 
 This is achieved using a media query for above 550px, which sets the width to the relevant % of the page width (12 base):
+```
     @media (min-width: 550px)
     .ten.columns {
         width: 82.6666666667%;
     }
-
+```
 Below this 550px screen size, the following column width is used, changing the WIDTH of the column to the entire width of the parent div.
+```
     .column, .columns {
         width: 100%;
         float: left;
         box-sizing: border-box;
     }
+```
